@@ -59,7 +59,7 @@ const writeToFile = (fileName, data) => {
 <body>
   <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4">Hi! My name is ${fileName.name}</h1>
+    <h1 class="display-4">Hi! My name is ${fileName.data.name}</h1>
     <p class="lead">I am from ${fileName.location}.</p>
     <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
     <ul class="list-group">
