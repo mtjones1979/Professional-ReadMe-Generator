@@ -16,38 +16,40 @@ function generateMarkdown(data) {
    
   ## Table of contents
   
-    - [Description](#Description)
-    - [Installation](#Installation)
-    - [Usage](#Usage)
-    - [Licence](#Licence)
-    - [Contributors](#Contributors)
-    - [Test](#Test)
-    - [Repository Link](#Repository)
-    - [GitHub Info](#GitHub) 
+  * [Description](#Description)
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [Test](#Test)
+  * [Contributors](#Contributors)
+  * [Licence](#Licence)
+  * [Repository Link](#Repository)
+  * [GitHub Info](#GitHub) 
   
-    ## Description 
+  ## Description 
     ${data.description}
   
-    ## Installation
+  ## Installation
     ${data.install}
   
-    ## Usage
+  ## Usage
     ${data.usage}
   
-    ## Test
+  ## Test
     ${data.test}
   
-    ## Contributors
+  ## Contributors
     ${data.credit}
+    Allow contributors in the future:
+    ${data.contributors}
   
-    ## Licence
-    ${data.licence}
+  ## Licence
+  Licensed under the ${data.licence}
     
-    ## Repository
-    - [Project Repo](${data.repolink})
+  ## Repository
+  [Project Repo](${data.repolink})
   
-    ## GitHub
-    - [GitHub Username](${data.username})
+  ## GitHub Contact
+    - If you have any further questions, contact: ${data.username}.
     `;
     }
     

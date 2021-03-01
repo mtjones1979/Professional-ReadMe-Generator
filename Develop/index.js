@@ -1,62 +1,83 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require('util');
-const generate = require('./utils/generateMarkdown');
+// const util = require('utils');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
-const questions = () => {
-    return inquirer.prompt ([
-        {
-            type: 'input',
-            message: 'What is the title of your Project?',
-            name: 'title',
-        },
-        {
-            type: 'input',
-            message: 'Please provide a short description explaining the what, why, and how of your project.',
-            name: 'description',
-        },
-        {
-            type: 'input',
-            message: 'What steps were required to install your project?',
-            name: 'install',
-        },
-        {
-            type: 'input',
-            message: 'Please provide instructions and examples for use.',
-            name: 'usage',
-        },
-        {
-            type: 'input',
-            message: 'Please list your collaborators with links to their GitHub profiles.',
-            name: 'credit',
-        },
-        {
-            type: 'list',
-            message: 'What license was used?',
-            name: 'license',
-            choices: ['MIT', 'ISC', 'Pearl', 'GNU', 'Apache', 'Creative Commons'],
-        },
-        {
-            type:'input',
-            message: 'Please provide test examples on how to run your project.',
-            name: 'test',
-        },
-    ]);
-};
+const questions = [
+    {
+        type: 'input',
+        message: 'What is the title of your Project?',
+        name: 'title',
+    },
+    {
+        type: 'input',
+        message: 'Please provide a short description explaining the what, why, and how of your project.',
+        name: 'description',
+    },
+    {
+        type: 'input',
+        message: 'What did you need to install for your application to work?',
+        name: 'install',
+    },
+    {
+        type: 'input',
+        message: 'How do you use your application?',
+        name: 'usage',
+    },
+    {
+        type:'input',
+        message: 'How would you run tests on this project?',
+        name: 'test',
+    },
+    {
+        type: 'list',
+        message: 'What license was used?',
+        name: 'license',
+        choices: ['MIT', 'ISC', 'GNU', 'Apache', 'None'],
+    },
+    {
+        type: 'input',
+        message: 'Please list contributors to your project.',
+        name: 'credit',
+    },
+    {   
+        type: 'list',
+        message: 'Would you like other developers to contribute to your project?',
+        name: 'contributors',
+        choices: ['Yes', 'No'] 
+    },
+    {
+        type: 'input',
+        messsage: 'What is your GitHub username?',
+        name: 'username',
+    },
+    {
+        type: 'input',
+        message: 'Please attach the repo link.',
+        name: 'repolink',
+    },
+    
+];
 // TODO: Create a function to write README file
-// const writeFileAsync = util.promisify(fs.writeFile);
-
-// const writeToFile = (fileName, data) 
+// const fileName = util.promisify(fs.writeFile);
+function writeToFile (fileName, data,) {
+     fs.writeFile(fileName, data, function(err){
+         if(err) {
+             console.log(err);
+         }
+            console.log("Data Entered!");
+     });
+}
    
 
 // TODO: Create a function to initialize app
 const init = () => {
-    questions()
-    .then((data) => ('README.md', generate(data)))
-    .then(() => console.log('Successfully wrote to README.md!'))
-    .catch((err) => console.error(err));
+    inquirer.prompt (questions)
+    .then((data) => writeToFile('README.md', generateMarkdown(data)))
+    // .then(() => console.log('Successfully wrote to README.md!'))
+    // .catch((err) => console.error(err));
 };
 
 // Function call to initialize app
