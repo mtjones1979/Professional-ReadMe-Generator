@@ -1,4 +1,4 @@
-# ReadMe
+# REadme 
    
   ## Table of contents
   
@@ -8,32 +8,34 @@
   * [Test](#Test)
   * [Contributors](#Contributors)
   * [Licence](#Licence)
-  * [Repository Link](#Repository)
-  * [GitHub Info](#GitHub) 
+  * [GitHub Repository Link](#Repository)
+  * [Contact](#Contact) 
   
   ## Description 
-    established how to generate a readme in the terminal
+    project based on geneartig a readme 
   
   ## Installation
     inquirer and fs
   
   ## Usage
-    in the terminal
+    through the command line
   
   ## Test
-    through the terminal
+  [Screenshot]<iframe src="https://drive.google.com/file/d/1nwdtkk2qc6vh9q-dQh0NHGbxB_wg8QUG/preview" width="640" height="480"></iframe>
   
   ## Contributors
-    Harry, Jen, and Robert
-    Allow contributors in the future:
-    Yes
+    Natacha
+  * Allow contributors in the future: *
+    No
   
   ## Licence
-  Licensed under the undefined
+   undefined
     
   ## Repository
-  [Project Repo](https://github.com/mtjones1979/Professional-ReadMe-Generator)
+  * GitHub Username: mtjones1979
+  * [Project Repo Link](  https://mtjones1979.github.io/Michael-Jones-Portfolio/)
   
-  ## GitHub Contact
-    - If you have any further questions, contact: mtjones@github.io.
+  
+  ## Contact
+    If you have any further questions, please contact me at: mtjones1979@yahoo.com.
     

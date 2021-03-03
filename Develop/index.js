@@ -3,7 +3,10 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 // const util = require('utils');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-
+const apache = "Licensed under the [Apache License](https://spdx.org/licenses/Apache-2.0.html).";
+const gnu    = "Licensed under the [GNU GPLv3 License](https://spdx.org/licenses/GPL-3.0-or-later.html).";
+const mit    = "Licensed under the [MIT License](https://spdx.org/licenses/MIT.html).";
+const isc    = "Licensed under the [ISC License](https://spdx.org/licenses/ISC.html).";
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -13,7 +16,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please provide a short description explaining the what, why, and how of your project.',
+        message: 'Please provide a short description explaining the what, why, and how of your project:',
         name: 'description',
     },
     {
@@ -39,7 +42,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please list contributors to your project.',
+        message: 'Please list contributors to your project:',
         name: 'credit',
     },
     {   
@@ -50,14 +53,20 @@ const questions = [
     },
     {
         type: 'input',
-        messsage: 'What is your GitHub username?',
-        name: 'username',
+        message: 'What is your GitHub username?',
+        name: 'github',
     },
     {
         type: 'input',
-        message: 'Please attach the repo link.',
+        message: 'Please attach your repository link:',
         name: 'repolink',
     },
+    {
+        type: 'input',
+        message: 'What is your email for further questions?',
+        name: 'email',
+    },
+   
     
 ];
 // TODO: Create a function to write README file
