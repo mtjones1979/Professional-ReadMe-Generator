@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 // const util = require('utils');
+const renderLicenseSection = require('./utils/generateMarkdown.js');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 const apache = "Licensed under the [Apache License](https://spdx.org/licenses/Apache-2.0.html).";
 const gnu    = "Licensed under the [GNU GPLv3 License](https://spdx.org/licenses/GPL-3.0-or-later.html).";
@@ -79,12 +80,11 @@ function writeToFile (fileName, data,) {
             console.log("Data Entered!");
      });
 }
-   
 
-// TODO: Create a function to initialize app
+   // TODO: Create a function to initialize app
 const init = () => {
     inquirer.prompt (questions)
-    .then((data) => writeToFile('README.md', generateMarkdown(data)))
+    .then((data) => writeToFile('generatedREADME.md', generateMarkdown(data), renderLicenseSection(data)))
     // .then(() => console.log('Successfully wrote to README.md!'))
     // .catch((err) => console.error(err));
 };
