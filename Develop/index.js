@@ -24,12 +24,12 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'How do you use your application?',
+        message: 'Please link the video of how you use your application: ',
         name: 'usage',
     },
     {
         type:'input',
-        message: 'How would you run tests on this project?',
+        message: 'Please attach the screenshots of your test: ',
         name: 'test',
     },
     {

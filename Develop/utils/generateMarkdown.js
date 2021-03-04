@@ -23,9 +23,11 @@ function generateMarkdown(data) {
       break;
       default:
         break;
+        
   }
+  // console.log(data.license);
   return `# ${data.title}
-   
+  
   ## Table of contents
   
   * [Description](#Description)
@@ -43,8 +45,8 @@ function generateMarkdown(data) {
   ## Installation
   ${data.install}
   
-  ## Usage
-  ${data.usage}
+  ## Video Using Application
+  [Link](${data.usage})
   
   ## Screenshot of Tests
   ![alt text](${data.test})
@@ -55,8 +57,8 @@ function generateMarkdown(data) {
   *Allow contributors in the future:* 
   ${data.contributors}
   
-  ## Licence
-  [License](${data.licence})
+  ## License
+  ${data.license}
     
   ## Repository
   * GitHub Username: ${data.github}

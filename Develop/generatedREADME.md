@@ -1,5 +1,5 @@
-# readme
-   
+# Generated ReadME
+  
   ## Table of contents
   
   * [Description](#Description)
@@ -12,28 +12,28 @@
   * [Contact](#Contact) 
   
   ## Description 
-  The extension .md stands for Markdown which is a lightweight markup language with plain text formatting syntax. It’s a very simple language used to create beautiful and presentable readme files for GitHub.
+  When creating an open source project on GitHub, it is important to have a quality README with information about the app--what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. A command-line application will allow for quick and easy generation of a project README to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.
   
   ## Installation
-  inquiere
+  inquirer, fs, and javascript
   
-  ## Usage
-  type comments in command line
+  ## Video Using Application
+  [Link](https://drive.google.com/file/d/1nwdtkk2qc6vh9q-dQh0NHGbxB_wg8QUG/preview)
   
   ## Screenshot of Tests
-  ![alt text](https://user-images.githubusercontent.com/74076318/108433225-3daeba80-720b-11eb-8299-0e68a02cdbe2.png)
+  ![alt text](https://user-images.githubusercontent.com/74076318/108433360-80709280-720b-11eb-8d82-6188e2ed4461.png)
   
   ## Contributors
-  mie
+  None
   
   *Allow contributors in the future:* 
   No
   
-  ## Licence
-  [License](undefined)
+  ## License
+  Apache
     
   ## Repository
-  * GitHub Username: mtjones179
+  * GitHub Username: mtjones1979
   * [Project Repo Link](https://github.com/mtjones1979/Professional-ReadMe-Generator)
   
   
