@@ -1,42 +1,48 @@
-# Generated ReadME
+
+  # Professional README Generator
+
+  ### ![badge](https://img.shields.io/badge/License-GNU-blue.svg)
   
   ## Table of contents
   
   * [Description](#Description)
-  * [Installation](#Installation)
-  * [Usage](#Usage)
+  * [Application Video](#Usage) 
+  * [Screenshots](#Screenshots)
+  * [Installations Used](#Installation)
   * [Test](#Test)
   * [Contributors](#Contributors)
-  * [Licence](#Licence)
-  * [GitHub Repository Link](#Repository)
+  * [License](#License)
   * [Contact](#Contact) 
   
   ## Description 
-  When creating an open source project on GitHub, it is important to have a quality README with information about the app--what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. A command-line application will allow for quick and easy generation of a project README to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.
+  Every good project needs a quality README - this command-line application runs with Node.js and dynamically generates a README.md file based on your input about your project.
+
+  ## Usage
+  * Application Video
+  [Link](https://drive.google.com/file/d/13emP-9f6jOVF2fd0tWs5bGEJQUIA4iu0/preview)
   
-  ## Installation
-  inquirer, fs, and javascript
-  
-  ## Video Using Application
-  [Link](https://drive.google.com/file/d/1nwdtkk2qc6vh9q-dQh0NHGbxB_wg8QUG/preview)
-  
-  ## Screenshot of Tests
-  ![alt text](https://user-images.githubusercontent.com/74076318/108433360-80709280-720b-11eb-8d82-6188e2ed4461.png)
+  * Screenshots
+  ![alt text](https://user-images.githubusercontent.com/74076318/108433225-3daeba80-720b-11eb-8299-0e68a02cdbe2.png)
+
+  ## Installations Used
+  inquirer that will prompt you for your inputs from the command line
+
+  ## Tests
+  none
   
   ## Contributors
-  None
+  none
   
   *Allow contributors in the future:* 
   No
   
   ## License
-  Apache
+  This project is licensed under the GNU License
     
-  ## Repository
-  * GitHub Username: mtjones1979
-  * [Project Repo Link](https://github.com/mtjones1979/Professional-ReadMe-Generator)
-  
-  
   ## Contact
   If you have any further questions, please contact me at: mtjones1979@yahoo.com.
     
+  *GitHub Repository Information*
+  * GitHub Username: mtjones1979
+  * [Project Link](https://github.com/mtjones1979/Professional-ReadMe-Generator)
+  

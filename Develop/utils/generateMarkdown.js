@@ -1,55 +1,49 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  
-}
-
+function renderLicenseBadge(license) {}
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {}
-
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(data) {}
-  
-
+function renderLicenseSection() {}
 
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  switch (data.license) {
-    case 'Apache':
-      license = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
-      break;
-      default:
-        break;
-        
-  }
-  // console.log(data.license);
-  return `# ${data.title}
+
+// console.log(data.license);
+  return `
+  # ${data.title}
+
+  #### ![badge](https://img.shields.io/badge/License-${data.license}-blue.svg)
   
   ## Table of contents
   
   * [Description](#Description)
-  * [Installation](#Installation)
   * [Usage](#Usage)
+  * [Installations Used](#Installation)
   * [Test](#Test)
   * [Contributors](#Contributors)
-  * [Licence](#Licence)
-  * [GitHub Repository Link](#Repository)
+  * [License](#License)
   * [Contact](#Contact) 
   
   ## Description 
   ${data.description}
+
+  ## Usage
   
-  ## Installation
-  ${data.install}
+  * Application Video
+  [Video Link](${data.usage})
   
-  ## Video Using Application
-  [Link](${data.usage})
-  
-  ## Screenshot of Tests
-  ![alt text](${data.test})
+  * Screenshots
+  ![alt text](${data.screenshot})
+
+  ## Installations Used
+  * ${data.install}
+
+  ## Tests
+  ${data.test}
   
   ## Contributors
   ${data.credit}
@@ -58,16 +52,15 @@ function generateMarkdown(data) {
   ${data.contributors}
   
   ## License
-  ${data.license}
+  This project is licensed under the ${data.license} License
     
-  ## Repository
-  * GitHub Username: ${data.github}
-  * [Project Repo Link](${data.repolink})
-  
-  
   ## Contact
   If you have any further questions, please contact me at: ${data.email}.
-    `;
+    
+  *GitHub Repository Information*
+  * GitHub Username: ${data.github}
+  * [Repository Link](${data.repolink})
+  `;
   }
 
   // module.exports = renderLicenseSection;

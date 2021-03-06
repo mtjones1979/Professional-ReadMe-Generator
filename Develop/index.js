@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 // const util = require('utils');
-const renderLicenseSection = require('./utils/generateMarkdown.js');
+// const renderLicenseSection = require('./utils/generateMarkdown.js');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
@@ -14,22 +14,27 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please provide a short description explaining the what, why, and how of your project:',
+        message: 'Please provide a short description of your project:',
         name: 'description',
     },
     {
         type: 'input',
-        message: 'What did you need to install for your application to work?',
-        name: 'install',
-    },
-    {
-        type: 'input',
-        message: 'Please link the video of how you use your application: ',
+        message: 'Please link a video of how you use your application, if applicable. ',
         name: 'usage',
     },
     {
+        type: 'input',
+        message: 'Please provide screenshots of your project.',
+        name: 'screenshot',
+    },
+    {
+        type: 'input',
+        message: 'What installations were required?',
+        name: 'install',
+    },
+    {
         type:'input',
-        message: 'Please attach the screenshots of your test: ',
+        message: 'Please provide test instructions, if applicable.',
         name: 'test',
     },
     {
@@ -51,7 +56,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What is your GitHub username?',
+        message: 'Enter your GitHub username.',
         name: 'github',
     },
     {
@@ -61,7 +66,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What is your email for further questions?',
+        message: 'Enter email for further questions.',
         name: 'email',
     },
    
@@ -74,14 +79,14 @@ function writeToFile (fileName, data,) {
          if(err) {
              console.log(err);
          }
-            console.log("Data Entered!");
+            console.log("Successfully wrote to a Generated README.md!");
      });
 }
 
    // TODO: Create a function to initialize app
 const init = () => {
     inquirer.prompt (questions)
-    .then((data) => writeToFile('generatedREADME.md', generateMarkdown(data), renderLicenseSection(data)))
+    .then((data) => writeToFile('generatedREADME.md', generateMarkdown(data)))
     // .then(() => console.log('Successfully wrote to README.md!'))
     // .catch((err) => console.error(err));
 };
