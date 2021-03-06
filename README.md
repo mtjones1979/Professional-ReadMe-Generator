@@ -18,10 +18,11 @@
   ## Usage
   
   * Application Video:
-  [Video Link](https://drive.google.com/file/d/1-IPb3RNpBzbc0gjuL1Bpe5MHXRVizK4u/preview)
+  [Video Link](https://drive.google.com/file/d/1-IPb3RNpBzbc0gjuL1Bpe5MHXRVizK4u/view)
   
   * Screenshots:
   ![alt text](https://user-images.githubusercontent.com/74076318/110222676-8e741380-7e99-11eb-9d02-b13082df06e9.png)
+  ![alt text](https://user-images.githubusercontent.com/74076318/110224785-3e4e7e80-7ea4-11eb-9d0d-1a862da62ccd.png)
 
   ## Installation
   Inquirer - that prompts you for your inputs from the command line
