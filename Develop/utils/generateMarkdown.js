@@ -28,10 +28,10 @@ function generateMarkdown(data) {
   * Screenshots:
   ![alt text](${data.screenshot})
 
-  ## Installations Used
+  ## Installation
   ${data.install}
 
-  ## Tests
+  ## Test
   ${data.test}
   
   ## Contributors

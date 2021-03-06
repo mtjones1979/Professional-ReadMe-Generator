@@ -1,4 +1,4 @@
-# Professional README Generator
+ # Professional README Generator
 
   #### ![badge](https://img.shields.io/badge/License-MIT-blue.svg)
   
@@ -18,19 +18,19 @@
   ## Usage
   
   * Application Video:
-  [Video Link](https://drive.google.com/file/d/13emP-9f6jOVF2fd0tWs5bGEJQUIA4iu0/preview)
+  [Video Link](https://drive.google.com/file/d/1-IPb3RNpBzbc0gjuL1Bpe5MHXRVizK4u/preview)
   
   * Screenshots:
   ![alt text](https://user-images.githubusercontent.com/74076318/110222676-8e741380-7e99-11eb-9d02-b13082df06e9.png)
 
-  ## Installations Used
+  ## Installation
   Inquirer - that prompts you for your inputs from the command line
 
-  ## Tests
+  ## Test
   The application starts when you input node.index.js in the command-line. Then you are prompted by several questions that allow you input text, embed links, and images. Then you are told if your data was accepted or if there are errors. Finally a generated README file is available.
   
   ## Contributors
-  None
+  N/A
   
   *Allow contributors in the future:* 
   No
